@@ -1,0 +1,173 @@
+@font-face {
+    font-family: klavika;
+    src: url('../assets/fonts/klavika-medium.otf');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url('../assets/fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    width: 35vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+}
+
+#bgImg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: -5%;
+}
+
+#bgTextContainer {
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 35vw;
+    height: 100px;
+    top: 45%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'klavika';
+}
+
+#bgTextContainer h1 {
+    font-size: 48px;
+}
+
+#content {
+    background-color: whitesmoke;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 1;
+}
+
+#content section {
+    font-family: roboto;
+}
+
+#topSection {
+    background-color: whitesmoke;
+    border-radius: 15px 0px 0px 0px;
+    flex: 1;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 25%;
+    align-items: center;
+}
+
+#middleSection {
+    background-color: white;
+    z-index: 1;
+    flex: 1;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#signUpForm {
+    width: 75%;
+    height: 175px;
+    padding: 25px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form section {
+    display: flex;
+    gap: 50px;
+}
+
+form section div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: roboto;
+    width: 250px;
+    outline: none;
+}
+
+input:focus {
+    outline: 1px solid lightblue;
+    box-shadow: 1px 1px 5px 1px lightgray;
+}
+
+#bottomSection {
+    background-color: whitesmoke;
+    border-radius: 2px 0px 0px 15px;
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50%;
+}
+
+#error {
+    color: lightcoral;
+}
+
+#createAccountButton {
+    margin-top: 35px;
+    width: auto;
+    padding: 15px 50px;
+    color: white;
+    background-color: rgb(73, 49, 26);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: roboto-bold;
+    font-size: 18px;
+}
+
+#createAccountButton:hover {
+    background-color: rgb(82, 55, 29);
+}
+
+#createAccountButton:active {
+    background-color: rgb(68, 45, 24);
+}
+
+a {
+    color: rgb(73, 49, 26);
+    font-family: roboto-bold;
+}
